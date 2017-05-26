@@ -23,7 +23,7 @@ import github.hellocsl.ucmainpager.behavior.helper.ViewOffsetBehavior;
  * Created by chensuilun on 16/7/24.
  */
 public class UcNewsHeaderPagerBehavior extends ViewOffsetBehavior {
-    private static final String TAG = "UcNewsHeaderPager";
+    private static final String TAG = "UcNewsHeaderPagerBehavior";
     public static final int STATE_OPENED = 0;
     public static final int STATE_CLOSED = 1;
     public static final int DURATION_SHORT = 300;
@@ -65,9 +65,7 @@ public class UcNewsHeaderPagerBehavior extends ViewOffsetBehavior {
 
     @Override
     public boolean onStartNestedScroll(CoordinatorLayout coordinatorLayout, View child, View directTargetChild, View target, int nestedScrollAxes) {
-        if (BuildConfig.DEBUG) {
-            Log.d(TAG, "onStartNestedScroll: nestedScrollAxes="+nestedScrollAxes);
-        }
+        Log.d(TAG, "UcNewsHeaderPagerBehavior.onStartNestedScroll: nestedScrollAxes="+nestedScrollAxes);
         boolean canScroll = canScroll(child, 0);
         return (nestedScrollAxes & ViewCompat.SCROLL_AXIS_VERTICAL) != 0 && canScroll && !isClosed(child);
 //        return (nestedScrollAxes & ViewCompat.SCROLL_AXIS_VERTICAL) != 0 && canScroll(child, 0) ;

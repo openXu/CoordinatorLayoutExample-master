@@ -4,7 +4,6 @@ http://www.xiufm.com/blog-1-849.html
 ## 相关博客
 
 
-
 [使用CoordinatorLayout打造各种炫酷的效果](http://blog.csdn.net/gdutxiaoxu/article/details/52858598)
 
 [自定义Behavior —— 仿知乎，FloatActionButton隐藏与展示](http://blog.csdn.net/gdutxiaoxu/article/details/53453958)
@@ -64,7 +63,6 @@ http://www.xiufm.com/blog-1-849.html
 
 ## 题外话
 
-如果觉得效果还不错的，请 star，谢谢。
 
 [使用CoordinatorLayout打造各种炫酷的效果](http://blog.csdn.net/gdutxiaoxu/article/details/52858598)
 
